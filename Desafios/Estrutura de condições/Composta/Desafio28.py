@@ -10,6 +10,6 @@ jogador = int(input('Em que número eu pensei? '))
 print('PROCESSANDO...')
 sleep(3)
 if jogador == computador:
-    print('NÃO FEZ O MÍNIMO! Você conseguiu me vencer!')
+    print('Parabéns! Você conseguiu me vencer!')
 else:
-    print('Você errou KKKKK! Eu pensei no número {}.'.format(computador))
+    print('Você errou! Eu pensei no número {}.'.format(computador))
