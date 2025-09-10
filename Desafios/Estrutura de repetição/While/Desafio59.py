@@ -1,19 +1,23 @@
 # Exibe um menu de opções
-
 from time import sleep
-opção = 0
-total = 50
-print('Iniciando...')
-for i in range(total + 1):
-    porcentagem = int((i / total) * 100)
-    barra = '#' * (porcentagem // 5)
-    espacos = ' ' * ((100 - porcentagem) // 5)
-    print('\rProgresso: [{}{}] {}%'.format(barra, espacos, porcentagem), end='')
-    sleep(0.1)
+def carregamento():
+    total = 50
+    for i in range(total + 1):
+        porcentagem = int((i / total) * 100)
+        barra = '#' * (porcentagem // 5)
+        espacos = ' ' * ((100 - porcentagem) // 5)
+        print('\rProgresso: [{}{}] {}%'.format(barra, espacos, porcentagem), end='')
+        sleep(0.1)
+        
+carregamento()
 print()
 print('=-=' * 13)
 num1 = int(input('Primeiro número: '))
 num2 = int(input('Segundo número: '))
+opção = 0
+carregamento()
+print()
+print('=-=' * 13)
 while opção != 5:
     print('''    [ 1 ] Somar
     [ 2 ] Multiplicar
@@ -39,12 +43,6 @@ while opção != 5:
         num2 = int(input('Segundo número: '))
     elif opção == 5:
         print('Finalizando...')
-        for i in range(total + 1):
-            porcentagem = int((i / total) * 100)
-            barra = '#' * (porcentagem // 5)
-            espacos = ' ' * ((100 - porcentagem) // 5)
-            print('\rProgresso: [{}{}] {}%'.format(barra, espacos, porcentagem), end='')
-            sleep(0.1)
     else:
         print('Opção inválida!')
     print()
