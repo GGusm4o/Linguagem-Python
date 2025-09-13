@@ -29,6 +29,13 @@ Os desafios estão divididos em pastas por assunto:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/seu-usuario/desafios-python.git
+   
+   cd desafios-python/Lista
+
+   python desafio01.py
+Ou
+Abra a IDE e selecione o local do projeto
+
 ## 🛠️ Requisitos
 Para executar os projetos você precisa ter instalado:
 
