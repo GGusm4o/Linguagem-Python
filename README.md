@@ -34,6 +34,7 @@ Para executar os projetos você precisa ter instalado:
 
 - IDE recomendada:
  [PyCharm](https://www.jetbrains.com/pt-br/pycharm/download/?section=windows)
+
 ⚠️ Certifique-se de ter o Python 3.8+ instalado.
 
 ## 💡 Contribuição
